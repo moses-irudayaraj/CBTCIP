@@ -4,9 +4,10 @@
 	<title></title>
 </head>
 <body>
-{% if final %}
-                <p>{{ final }}</p>
-                
-            {% endif %}
+    <!-- Check if 'final' variable is defined -->
+    {% if final %}
+        <!-- Display the content of 'final' variable within a paragraph -->
+        <p>{{ final }}</p>
+    {% endif %}
 </body>
 </html>
