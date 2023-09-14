@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Styling.css') }}">
-</head>
+    <title></title>
+    <!-- Link to an external CSS stylesheet named 'Styling.css' located in the 'static' folder -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Styling.css') }}">
 </head>
 <body>
-	<form action="/process" method="POST">
-    <h1>Player1</h1>
-    <label for="mult_digit">Please Eter a Multi-Digit Number:</label>
-    <input type="text" name="mult_digit"/>
-    <div class="button-container">
-        <input type="submit" value="Submit">
-    </div>
-    
-</form>
-
-
-
+    <!-- Create a form element that submits data to the "/process" route using the POST method -->
+    <form action="/process" method="POST">
+        <!-- Display a heading "Player1" to indicate the current player -->
+        <h1>Player1</h1>
+        
+        <!-- Label for the input field -->
+        <label for="mult_digit">Please Enter a Multi-Digit Number:</label>
+        
+        <!-- Input field for entering a multi-digit number with the name "mult_digit" -->
+        <input type="text" name="mult_digit"/>
+        
+        <!-- Container for the form submission button -->
+        <div class="button-container">
+            <!-- Submit button to send the form data -->
+            <input type="submit" value="Submit">
+        </div>
+    </form>
 </body>
 </html>
